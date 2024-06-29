@@ -35,7 +35,7 @@ function displayData() {
             <div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb" class="text-light">
-                        <li class="breadcrumb-item text-reset"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item text-reset"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item text-info" aria-current="page">${containerDetails.title}</li>
                     </ol>
                 </nav>
