@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <!--? ===============  BootStrap5.3 =============== -->
+    <title>Game App</title>
+    <!-- ===============  FontAwesome6.2.1 Css File =============== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--? ===============  BootStrap 5.3 =============== -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--? ===============  Main Css File =============== -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--? ===============  Media Css File =============== -->
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
-
     <header>
-        <img src="img/wraper.png" class="w-100" alt="game photo" />
+        <img src="img/wraper.png" alt="wraper" class="w-100" />
     </header>
     <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
         <div class="container">
             <h1 class="navbar-brand mb-0 text-uppercase">
-                <img src="img/logo-sm.png" alt="logo photo" style="max-width: 40px" /> Game Reviews
+                <img src="img/logo-sm.png" alt="logo photo" style="max-width: 40px" />
+                Game Reviews
             </h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -53,7 +57,11 @@
     </nav>
     <main class="container my-5 home">
         <section class="position-relative">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+            </div>
+            <div class="loading d-none">
+                <span class="loader"></span>
+            </div>
         </section>
     </main>
     <section class="details d-none">
@@ -65,13 +73,9 @@
             <div class="row g-4" id="detailsContent"></div>
         </div>
     </section>
-    <div class="loading d-none">
-        <span class="loader"></span>
-    </div>
-    <!--! ============ BootStrap JS File ============ -->
+    <!--? ===============  BootStrap 5.3 =============== -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!--! ============ Main Js File ============ -->
-    <script src="js/index.js" type="module"></script>
+    <!--? ===============  Main JS File =============== -->
+    <script src="js/main.js"></script>
 </body>
-
 </html>
