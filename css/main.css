@@ -109,7 +109,6 @@ header img {
 
 .details {
     background-color: #272729be;
-
     backdrop-filter: blur(4px);
     min-height: 100vh;
 }
