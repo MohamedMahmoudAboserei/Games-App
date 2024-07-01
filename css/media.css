@@ -1,0 +1,10 @@
+@media (max-width: 1150px) {
+
+    /* ==================Navbar==================*/
+    nav .container {
+        display: flex;
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 10px;
+    }
+}

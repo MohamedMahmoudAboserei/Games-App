@@ -50,29 +50,27 @@ class GameApp {
             let videoPath = gamesData[i].thumbnail.replace("thumbnail.jpg", "videoplayback.webm");
             gamesBox += `
                 <div class="col">
-                    <div class="card h-100 bg-transparent" role="button">
+                    <div class="card" role="button">
                         <div class="card-body">
-                            <figure class="position-relative">
+                            <div class="img-vid position-relative">
                                 <img class="card-img-top object-fit-cover h-100"
                                     src="${gamesData[i].thumbnail}">
                                 <video muted="true"  preload="none" loop   class="w-100 d-none h-100 position-absolute top-0 start-0 z-3">
                                     <source src="${videoPath}">
                                 </video>
-                            </figure>
-                            <figcaption>
-                                <div class="hstack justify-content-between">
-                                    <h3 class="h6 small">${gamesData[i].title}</h3>
-                                    <span class="badge text-bg-primary p-2">Free</span>
-                                </div>
-                                <p class="card-text small text-center opacity-50">
-                                    ${gamesData[i].short_description}
-                                </p>
-                            </figcaption>
+                                <span class="badge text-bg-primary p-2">Free</span>
+                            </div>
+                            <div class="hstack justify-content-between py-2">
+                                <h3 class="title-name">${gamesData[i].title}</h3>
+                            </div>
+                            <p class="card-text text-center">
+                                ${gamesData[i].short_description}
+                            </p>
                         </div>
-                        <footer class="card-footer small hstack justify-content-between">
-                            <span class="badge badge-color">${gamesData[i].genre}</span>
-                            <span class="badge badge-color">${gamesData[i].platform}</span>
-                        </footer>
+                        <div class="card-footer">
+                            <span>${gamesData[i].genre}</span>
+                            <span>${gamesData[i].platform}</span>
+                        </div>
                     </div>
                 </div>
             `;

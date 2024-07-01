@@ -17,21 +17,22 @@
 </head>
 
 <body>
+        <!-- =================> Header <================= -->
     <header>
         <img src="img/wraper.png" alt="wraper" class="w-100" />
     </header>
+        <!-- =================> Navbar <================= -->
     <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
         <div class="container">
-            <h1 class="navbar-brand mb-0 text-uppercase">
-                <img src="img/logo-sm.png" alt="logo photo" style="max-width: 40px" />
-                Game Reviews
+            <h1>
+                <img src="img/computer-game.png" alt="logo photo" style="max-width: 40px" />
+                <a class="navbar-brand" href="index.html">Game Reviews</a>
             </h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
                     <li class="nav-item">
                         <a role="button" class="nav-link active text-uppercase" aria-current="page"
@@ -56,15 +57,16 @@
             </div>
         </div>
     </nav>
-    <main class="container my-5 home">
-        <section class="position-relative">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+        <!-- =================> Content <================= -->
+    <section class="content">
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4" id="gameData">
             </div>
             <div class="loading d-none">
                 <span class="loader"></span>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
     <section class="details d-none">
         <div class="container">
             <header class="hstack justify-content-between">
