@@ -1,10 +1,37 @@
 @media (max-width: 1150px) {
-
     /* ==================Navbar==================*/
     nav .container {
         display: flex;
         flex-direction: column !important;
         gap: 20px;
         padding: 10px;
+    }
+}
+@media (max-width: 990px) {
+    /* ==================Navbar==================*/
+    nav {
+        width: 75% !important;
+    }
+    nav .container {
+        display: flex;
+        flex-direction: row !important;
+        padding: 0 30px;
+    }
+}
+@media (max-width: 575px) {
+    /* ==================Navbar==================*/
+    nav {
+        width: 90% !important;
+    }
+    nav .container {
+        display: flex;
+        flex-direction: row !important;
+        padding: 0 30px;
+    }
+    nav .container h1 img {
+        max-width: 20px;
+    }
+    nav .container h1 a {
+        font-size: 20px !important;
     }
 }
