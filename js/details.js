@@ -29,20 +29,18 @@ class GameDetails {
 
     displayData() {
         const detailsBox = `
-            <div class="col-md-4">
-                <figure>
-                    <img src="${this.containerDetails.thumbnail}" class="w-100" alt="details image" />
-                </figure>
+            <div class="col-md-6">
+                <img src="${this.containerDetails.thumbnail}" class="w-100" alt="details image" />
             </div>
-            <div class="col-md-8">
-                <div>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb" class="text-light">
+            <div class="col-md-6">
+                <div class="content">
+                    <div aria-label="breadcrumb">
+                        <ul class="breadcrumb" class="text-light">
                             <li class="breadcrumb-item text-reset"><a href="./index.html">Home</a></li>
-                            <li class="breadcrumb-item text-info" aria-current="page">${this.containerDetails.title}</li>
-                        </ol>
-                    </nav>
-                    <h1>${this.containerDetails.title}</h1>
+                            <li class="breadcrumb-item tarisland" aria-current="page">${this.containerDetails.title}</li>
+                        </ul>
+                    </div>
+                    <h2>${this.containerDetails.title}</h2>
                     <h3>About ${this.containerDetails.title}</h3>
                     <p>${this.containerDetails.description}</p>
                 </div>

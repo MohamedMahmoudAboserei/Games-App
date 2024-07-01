@@ -154,11 +154,35 @@ nav h1 a {
         clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
     }
 }
-
-
-
+/* ================== Details ==================*/
 .details {
     background-color: #272729be;
     backdrop-filter: blur(4px);
     min-height: 100vh;
+    padding: 100px 0 0;
+}
+
+.details .container .content .breadcrumb {
+    margin-bottom: 4px;
+}
+
+.details .container .content .breadcrumb .tarisland {
+    color: var(--fourth-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details .container .content .breadcrumb .text-reset {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details .container .content h2 {
+    font-size: 50px;
+    color: var(--fourth-color) !important;
+}
+
+.details .container .content h3 {
+    font-size: 30;
+    color: var(--main-color) !important;
 }
